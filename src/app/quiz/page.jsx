@@ -93,12 +93,9 @@ const page = () =>{
                 ) : (
                 <div className="mt-2 p-4 bg-white shadow-lg rounded-lg text-center">
                     <h3  className="text-2xl font-bold">Results</h3>
-                    <h3>Overall {(results.score / 25)*100}%</h3>
+                    <h3>Overall {(results.correctAnswers / questions.length) * 100}%</h3>
                     <p>
                         Total Questions: <span>{questions.length}</span>
-                    </p>
-                    <p>
-                        Total Score: <span>{results.score}</span>
                     </p>
                     <p>
                         Correct Answers: <span>{results.correctAnswers}</span>
